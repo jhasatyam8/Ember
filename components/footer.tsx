@@ -33,7 +33,7 @@ export function Footer() {
 
           {/* Tagline */}
           <p className="text-center font-serif text-sm italic text-muted-foreground">
-            Crafted with fire, built with soul.
+            Rooted in wisdom, ignited for the world.
           </p>
 
           <div className="flex items-center gap-3">
