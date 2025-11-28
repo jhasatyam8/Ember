@@ -44,7 +44,7 @@ export function Footer() {
 
           {/* Legal microcopy */}
           <p className="max-w-md text-center text-xs text-muted-foreground/50">
-            Ember — Roots to Revolution. We honor traditional knowledge and commit to ethical, transparent partnerships.
+            Ember - Roots to Revolution. We honor traditional knowledge and commit to ethical, transparent partnerships.
           </p>
 
           {/* Copyright */}

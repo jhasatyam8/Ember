@@ -39,13 +39,13 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
-        {/* Coming Soon Badge */}
+        {/* Launching Soon Badge */}
         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-card/50 px-4 py-2 backdrop-blur-sm">
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
           </span>
-          <span className="text-sm font-medium uppercase tracking-[0.3em] text-primary">Coming Soon</span>
+          <span className="text-sm font-medium uppercase tracking-[0.3em] text-primary">Launching Soon</span>
         </div>
 
         <div className="animate-heartbeat mb-6">
@@ -71,7 +71,7 @@ export function HeroSection() {
 
         {/* Hero paragraph */}
         <p className="mb-10 max-w-2xl text-balance text-base font-light leading-relaxed text-muted-foreground/80">
-          From village huts to global shelves — Ember finds powerful remedies that have healed families for generations
+          From village huts to global shelves - Ember finds powerful remedies that have healed families for generations
           and brings them into the light, responsibly and with reverence.
         </p>
 

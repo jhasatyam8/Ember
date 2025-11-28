@@ -52,7 +52,7 @@ export function WhatIsEmber() {
 
           <div className="space-y-8 text-center">
             <p className="font-serif text-xl font-light leading-relaxed text-foreground/90 md:text-2xl">
-              In rural villages and small communities, generations have relied on traditional remedies — powerful,
+              In rural villages and small communities, generations have relied on traditional remedies - powerful,
               time-tested treatments often unknown to the wider world. These remedies, passed down within small circles
               of 400–500 people, demonstrate remarkable real-world effectiveness but rarely reach beyond their local
               origins.

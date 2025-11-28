@@ -110,7 +110,7 @@ export function VisionSection() {
           <div className="mx-auto max-w-3xl rounded-xl border border-border/30 bg-card/20 p-8 backdrop-blur-sm md:p-12">
             <h3 className="mb-6 font-serif text-2xl font-light text-foreground md:text-3xl">Our Mission</h3>
             <p className="font-serif text-lg font-light leading-relaxed text-muted-foreground md:text-xl">
-              Ember{"'"}s mission is simple yet revolutionary — to bring affordable, proven, and community-driven
+              Ember{"'"}s mission is simple yet revolutionary - to bring affordable, proven, and community-driven
               medical solutions to the world, igniting a new era of inclusive healthcare innovation.
             </p>
           </div>
