@@ -37,10 +37,9 @@ export function NotifySection() {
     return () => observer.disconnect()
   }, [])
 
-  // Countdown timer - set to 45 days from now
+  // Countdown timer - fixed target date: January 1, 2026
   useEffect(() => {
-    const targetDate = new Date()
-    targetDate.setDate(targetDate.getDate() + 45)
+    const targetDate = new Date("2026-01-01T00:00:00")
 
     const interval = setInterval(() => {
       const now = new Date()
