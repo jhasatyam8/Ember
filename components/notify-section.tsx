@@ -13,12 +13,17 @@ export function NotifySection() {
   const [isVisible, setIsVisible] = useState(false)
   const [email, setEmail] = useState("")
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
   const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0,
   })
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,9 +44,11 @@ export function NotifySection() {
 
   // Countdown timer - fixed target date: January 1, 2026
   useEffect(() => {
+    if (!isMounted) return
+
     const targetDate = new Date("2026-01-01T00:00:00")
 
-    const interval = setInterval(() => {
+    const updateCountdown = () => {
       const now = new Date()
       const diff = targetDate.getTime() - now.getTime()
 
@@ -53,10 +60,13 @@ export function NotifySection() {
           seconds: Math.floor((diff % (1000 * 60)) / 1000),
         })
       }
-    }, 1000)
+    }
+
+    updateCountdown()
+    const interval = setInterval(updateCountdown, 1000)
 
     return () => clearInterval(interval)
-  }, [])
+  }, [isMounted])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
